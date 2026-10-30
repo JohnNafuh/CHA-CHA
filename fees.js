@@ -1,4 +1,4 @@
-// splitpot platform fee
+// CHA-CHA platform fee
 // Load after supabase.js. Reads fee tiers from the database so every
 // calculator matches what settle_room actually charges.
 (function () {

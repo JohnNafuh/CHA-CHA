@@ -9,10 +9,10 @@
   <link rel="apple-touch-icon" href="icon-180.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="splitpot">
+  <meta name="apple-mobile-web-app-title" content="CHA-CHA">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
-  <title>Sign in · splitpot</title>
+  <title>Sign in · CHA-CHA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
@@ -139,14 +139,14 @@
 <body>
 
   <header class="topbar">
-    <a class="wordmark" href="index.html">splitpot</a>
+    <a class="wordmark" href="index.html">CHA-CHA</a>
   </header>
 
   <main class="auth">
 
     <!-- Step 1: sign in or create account -->
     <section id="authStep">
-      <h1 id="authTitle">Sign in to splitpot</h1>
+      <h1 id="authTitle">Sign in to CHA-CHA</h1>
 
       <div class="segmented" role="group" aria-label="Choose sign in or create account">
         <button type="button" id="modeSignIn" aria-pressed="true">Sign in</button>
@@ -229,7 +229,7 @@
       const signingUp = mode === "signup";
       modeSignIn.setAttribute("aria-pressed", String(!signingUp));
       modeSignUp.setAttribute("aria-pressed", String(signingUp));
-      authTitle.textContent = signingUp ? "Create your splitpot account" : "Sign in to splitpot";
+      authTitle.textContent = signingUp ? "Create your CHA-CHA account" : "Sign in to CHA-CHA";
       authButton.textContent = signingUp ? "Create account" : "Sign in";
       passwordEl.autocomplete = signingUp ? "new-password" : "current-password";
       authError.textContent = "";
@@ -260,7 +260,7 @@
       usernameGroup.hidden = completing;
       stepTitle.textContent = completing ? "One more step" : "Pick a username";
       stepHint.textContent = completing
-        ? "Confirm your age and accept the Terms to keep using splitpot."
+        ? "Confirm your age and accept the Terms to keep using CHA-CHA."
         : "This is how your friends see you in a room. Use 3 to 20 letters, numbers or underscores.";
       if (!completing) usernameEl.focus();
     }
@@ -345,7 +345,7 @@
         return;
       }
       if (age < 18) {
-        usernameError.textContent = "You must be 18 or older to use splitpot.";
+        usernameError.textContent = "You must be 18 or older to use CHA-CHA.";
         return;
       }
       if (!termsEl.checked) {

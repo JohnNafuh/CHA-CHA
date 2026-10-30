@@ -1,6 +1,6 @@
 {
-  "name": "splitpot",
-  "short_name": "splitpot",
+  "name": "CHA-CHA",
+  "short_name": "CHA-CHA",
   "description": "Play your friends. Winner takes the pot.",
   "start_url": "./index.html",
   "scope": "./",

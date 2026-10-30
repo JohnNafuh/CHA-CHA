@@ -1,7 +1,7 @@
-// splitpot service worker
+// CHA-CHA service worker
 // Always tries the network first, so updates show up straight away.
 // Falls back to the last saved copy, then to offline.html, when there's no connection.
-const CACHE = "splitpot-v2";
+const CACHE = "chacha-v1";
 const SHELL = ["./", "index.html", "offline.html", "style.css?v=3", "icon-192.png"];
 
 self.addEventListener("install", (event) => {
@@ -53,7 +53,7 @@ self.addEventListener("push", (event) => {
   }
 
   event.waitUntil(
-    self.registration.showNotification(data.title || "splitpot", {
+    self.registration.showNotification("CHA-CHA", {
       body: data.body || "You have a new notification.",
       icon: "icon-192.png",
       badge: "icon-192.png",

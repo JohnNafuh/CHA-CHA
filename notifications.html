@@ -9,10 +9,10 @@
   <link rel="apple-touch-icon" href="icon-180.png">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="splitpot">
+  <meta name="apple-mobile-web-app-title" content="CHA-CHA">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
-  <title>Notifications · splitpot</title>
+  <title>Notifications · CHA-CHA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
@@ -118,7 +118,7 @@
 <body>
 
   <header class="topbar">
-    <a class="wordmark" href="index.html">splitpot</a>
+    <a class="wordmark" href="index.html">CHA-CHA</a>
   </header>
 
   <main class="inbox">
@@ -198,7 +198,7 @@
 
       if (!supported) {
         if (/iPhone|iPad/.test(navigator.userAgent) && !installed) {
-          showPush("Get alerts on your phone", "Add splitpot to your home screen first (Share → Add to Home Screen), then open it from there and turn on notifications.");
+          showPush("Get alerts on your phone", "Add CHA-CHA to your home screen first (Share → Add to Home Screen), then open it from there and turn on notifications.");
         } else {
           showPush("Phone alerts aren't available", "This browser doesn't support push notifications. You'll still see everything here.");
         }
@@ -206,7 +206,7 @@
       }
 
       if (Notification.permission === "denied") {
-        showPush("Notifications are blocked", "Turn them on for splitpot in your phone's Settings → Notifications, then come back here.");
+        showPush("Notifications are blocked", "Turn them on for CHA-CHA in your phone's Settings → Notifications, then come back here.");
         return;
       }
 
@@ -217,7 +217,7 @@
         await saveSubscription(existing);
         showPush("Notifications are on", "This phone gets an alert when friends join, when it's time to vote, and when games are paid out.", "Turn off on this phone", "btn-secondary");
       } else {
-        showPush("Get alerts on your phone", "Know the moment a friend joins, when it's time to vote, and when you win, even with splitpot closed.", "Turn on notifications");
+        showPush("Get alerts on your phone", "Know the moment a friend joins, when it's time to vote, and when you win, even with CHA-CHA closed.", "Turn on notifications");
       }
     }
 

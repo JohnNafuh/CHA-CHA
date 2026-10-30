@@ -1,4 +1,4 @@
-// splitpot notification bell
+// CHA-CHA notification bell
 // Load after supabase.js. Adds a bell with a live unread count to the top bar.
 (function () {
   if (!window.sb) return;
